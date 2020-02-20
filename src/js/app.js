@@ -1,4 +1,4 @@
-const apiUrl = 'https://shohin-express-api.herokuapp.com/api/posts';
+const apiUrl =  'https://shohin-express-api.herokuapp.com/api/posts';
 
 const rootEl = document.querySelector('#root');
 
@@ -68,6 +68,7 @@ function getAllPosts (){
                         evt.preventDefault();
                         btnAddPost.style = "display: none";
                         btnEdditPost.style = "display: inline";
+                        inputName.value = o.name
                         inputName.focus();
                         btnEdditPost.onclick = function(evt){
                             evt.preventDefault();
